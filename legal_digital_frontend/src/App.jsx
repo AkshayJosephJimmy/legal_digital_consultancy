@@ -1,4 +1,4 @@
-import Header from "./components/header"
+import Header from "./components/Header.jsx"
 import HomeHero from "./components/HomeHero"
 import Home from "./components/Home.jsx"
 import Footer from "./components/Footer.jsx"
