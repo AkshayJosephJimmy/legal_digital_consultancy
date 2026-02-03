@@ -1,12 +1,13 @@
 import { RxHamburgerMenu } from "react-icons/rx";
 import useScreenWidth from "../hooks/useScreenWidth";
+import { Link } from "react-router-dom";
 
 
 
 function Header(){
 
 const width=useScreenWidth();
-console.log(width);
+
 
 
 
@@ -15,9 +16,9 @@ console.log(width);
             <h1 className=" text-2xl font-bold">Company Name</h1>
             {width<500?<RxHamburgerMenu className="text-2xl" />:<nav>
                 <ul className="flex space-x-4">
-                    <li className="hover:text-yellow-500 cursor-pointer">Home</li>
-                    <li className="hover:text-blue-500 cursor-pointer">About</li>
-                    <li className="hover:text-blue-500 cursor-pointer">Services</li>
+                    <Link to="/" className="hover:text-yellow-500 cursor-pointer">Home</Link>
+                    <Link to="/about" className="hover:text-blue-500 cursor-pointer">About</Link>
+                    <Link to="/services" className="hover:text-blue-500 cursor-pointer">Services</Link>
                     <li className="hover:text-blue-500 cursor-pointer">Our Team</li>
                     
                 </ul>
