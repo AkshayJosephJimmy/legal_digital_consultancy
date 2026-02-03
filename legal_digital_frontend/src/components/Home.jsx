@@ -1,6 +1,6 @@
 import ChooseUs from "./ChooseUs"
 import HomeHero from "./HomeHero"
-import Lawsvg from "/Users/akshayjosephjimmy/legal_digital_cons/legal_digital_frontend/src/assets/Law firm-cuate.svg"
+
 
 
 

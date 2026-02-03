@@ -1,4 +1,4 @@
-import homeHeroImage from "/Users/akshayjosephjimmy/legal_digital_cons/legal_digital_frontend/src/assets/tingey-injury-law-firm-DZpc4UY8ZtY-unsplash.jpg"
+import homeHeroImage from "../assets/tingey-injury-law-firm-DZpc4UY8ZtY-unsplash.jpg"
 import { Link } from "react-router-dom";
 
 function HomeHero() {

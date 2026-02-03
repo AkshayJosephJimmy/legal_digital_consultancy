@@ -1,4 +1,4 @@
-import image from "/Users/akshayjosephjimmy/legal_digital_cons/legal_digital_frontend/src/assets/giammarco-boscaro-OPzWvgL-upY-unsplash.jpg"
+import image from "../assets/giammarco-boscaro-OPzWvgL-upY-unsplash.jpg"
 
 
 
