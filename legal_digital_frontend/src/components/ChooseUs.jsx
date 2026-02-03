@@ -34,7 +34,7 @@ function ChooseUs() {
   return (
     <div className="choose-us-container">
       <h2 className="text-black text-6xl text-center font-extrabold my-30">Why Choose Us</h2>
-      <div className="flex flex-row gap-20 flex-wrap">
+      <div className="flex gap-20 flex-wrap flex-col items-center lg:flex-row ">
         {features.map((feature,index)=>(
             <ChooseCards key={index} feature={feature}/>
         ))}

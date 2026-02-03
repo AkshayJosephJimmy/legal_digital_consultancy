@@ -15,12 +15,12 @@
           ✕
         </button>
 
-        <h2 className="text-4xl font-bold mb-2 p-10">{service.title}</h2>
-        <p className="text-gray-700 text-2xl mt-2 p-4">{service.description}</p>
+        <h2 className=" text-2xl p-5 lg:text-4xl font-bold mb-2 lg:p-10">{service.title}</h2>
+        <p className="text-gray-700  text-lglg:text-2xl mt-2 p-4">{service.description}</p>
 
         <ul className="list-disc pl-6">
         {service.details.map((detail, index) => (
-            <li key={index} className="text-black text-xl mt-2 p-1">{detail}</li>
+            <li key={index} className="text-black text-lg lg:text-xl mt-2 lg:p-1">{detail}</li>
         ))}
         </ul>
 
