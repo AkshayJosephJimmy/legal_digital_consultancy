@@ -3,14 +3,14 @@ import SeriveHero from "./SeriveHero"
 import ServiceCards from "./ServiceCards"
 import { useState } from "react"
 import ExpandedCard from "./ExpandedCard"
-import image1 from "../assets/strategy_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
-import image2 from "../assets/contract_edit_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
-import image3 from "../assets/online_prediction_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
-import image4 from "../assets/web_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
-import image5 from "../assets/design_services_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
-import image6 from "../assets/social_leaderboard_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
-function Services(){
 
+function Services(){
+const image1 = "/mediaStrategy.svg";
+const image2 = "/contentIcon.svg";
+const image3 = "/SEO.svg";
+const image4 = "/websiteIcon.svg";
+const image5 = "/designIcon.svg";
+const image6 = "/leadershipIcon.svg";
     const [selectedCard,setSelectedCard]=useState(null);
 const service=[{
     title:"Social Media Strategy & Management",

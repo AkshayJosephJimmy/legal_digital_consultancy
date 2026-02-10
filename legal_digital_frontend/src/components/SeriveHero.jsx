@@ -1,12 +1,12 @@
-import image from "../assets/giammarco-boscaro-OPzWvgL-upY-unsplash.jpg"
+
 
 
 
 function SeriveHero() {
-  
+  const image = "/serviceHero.jpg";
      return(
             <>
-                <div className="bg-blue-500 relative">
+                <div className=" relative">
     
                 <img src={image} alt="Services Image" className="w-full h-100 object-cover"/>
     

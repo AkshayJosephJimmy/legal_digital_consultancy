@@ -1,7 +1,8 @@
-import homeHeroImage from "../assets/tingey-injury-law-firm-DZpc4UY8ZtY-unsplash.jpg"
+
 import { Link } from "react-router-dom";
 
 function HomeHero() {
+  const homeHeroImage = "/HomeHero.jpg";
   return (
     <div className="w-full h-150 bg-blue-500 flex items-center justify-center relative">
       <img
