@@ -3,6 +3,7 @@ import SeriveHero from "./SeriveHero"
 import ServiceCards from "./ServiceCards"
 import { useState } from "react"
 import ExpandedCard from "./ExpandedCard"
+import ServiceModels from "./ServiceModels"
 
 function Services(){
 const image1 = "/mediaStrategy.svg";
@@ -11,6 +12,9 @@ const image3 = "/SEO.svg";
 const image4 = "/websiteIcon.svg";
 const image5 = "/designIcon.svg";
 const image6 = "/leadershipIcon.svg";
+const image7="/fundamental.svg"
+const image8="/standard.svg"
+const image9="/king.svg"
     const [selectedCard,setSelectedCard]=useState(null);
 const service=[{
     title:"Social Media Strategy & Management",
@@ -74,6 +78,43 @@ const service=[{
     image:image6
 
 }]
+const models=[
+    {
+        title:"Foundational Model",
+        description:"Core services focused on establishing a compliant and professional digital presence",
+        image:image7,
+        features:[{name:"Social Media Strategy & Management",disabled:false},
+        {name:"Legal Content Creation",disabled:false},
+        {name:"SEO & Online Visibility",disabled:true},
+        {name:"Website Development",disabled:true},
+        {name:"Legal Design & Branding",disabled:true},
+        ]
+
+    },
+    {
+        title:"Standard Model",
+        description:"An expanded scope supporting consistent content, visibility, and ongoing digital engagement.",
+        image:image8,
+        features:[{name:"Social Media Strategy & Management",disabled:false},
+        {name:"Legal Content Creation",disabled:false},
+        {name:"SEO & Online Visibility",disabled:false},
+        {name:"Legal Design & Branding",disabled:false},
+        {name:"Website Development",disabled:true},
+        {name:"Thought Leadership & Industry Positioning",disabled:true}
+        ]
+    },{
+        title:"Comprehensive Model",
+        description:"End-to-end digital support covering strategy, content, visibility, branding, and thought leadership",
+        image:image9,
+        features:[{name:"Social Media Strategy & Management",disabled:false},
+        {name:"Legal Content Creation",disabled:false},
+        {name:"SEO & Online Visibility",disabled:false},
+        {name:"Website Development",disabled:false},
+    {name:"Legal Design & Branding",disabled:false},
+    {name:"Thought Leadership & Industry Positioning",disabled:false}]
+    }
+
+]
    
 
 
@@ -82,7 +123,7 @@ const service=[{
     return(
         <>
             <SeriveHero/>
-            <div className="h-full flex flex-row gap-10 p-20 flex-wrap justify-center bg-gray-200">
+            <div className="h-full flex flex-row gap-25 py-20 flex-wrap justify-center bg-gray-200">
                 {service.map((item,index)=><ServiceCards key={index} service={item} onClick={()=>{setSelectedCard(index);console.log("selected card:",index)}}/>)}
                     {selectedCard !== null && (
   <ExpandedCard 
@@ -90,7 +131,23 @@ const service=[{
     onClose={() => setSelectedCard(null)} 
   />
 )}
-                
+            <div className="w-full h-40 mt-20  bg-gray-800">
+
+            <h2 className="text-6xl text-white font-bold text-center mt-10">Service Models</h2>
+
+            </div>
+
+            <p className="text-xl text-center p-4">Our services are offered through three structured service models, designed to accommodate
+            varying levels of digital presence and institutional requirements.
+            </p>
+
+            {models.map((model,index)=><ServiceModels key={index} model={model}/>)}
+            <div className="w-3/4 h-40 mt-5  bg-white p-6 rounded-4xl">
+            <h4 className="text-lg font-semibold">Custom Models</h4>
+
+            <p className="mt-2 text-sm lg:text-base">In addition to these models, services may be <span className="text-blue-500">custom-selected</span> or <span className="text-blue-500">tailored</span> based on specific objectives, practice areas and compliance considerations.</p>
+
+            </div>
             </div>
             
         </>
