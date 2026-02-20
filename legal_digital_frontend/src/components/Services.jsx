@@ -123,7 +123,7 @@ const models=[
     return(
         <>
             <SeriveHero/>
-            <div className="h-full flex flex-row gap-25 py-20 flex-wrap justify-center bg-gray-200">
+            <div className="h-full flex flex-row gap-25 py-20 flex-wrap justify-center bg-neutral-300">
                 {service.map((item,index)=><ServiceCards key={index} service={item} onClick={()=>{setSelectedCard(index);console.log("selected card:",index)}}/>)}
                     {selectedCard !== null && (
   <ExpandedCard 
@@ -131,7 +131,7 @@ const models=[
     onClose={() => setSelectedCard(null)} 
   />
 )}
-            <div className="w-full h-40 mt-20  bg-gray-800">
+            <div className="w-full h-40 mt-20  bg-neutral-800">
 
             <h2 className="text-6xl text-white font-bold text-center mt-10">Service Models</h2>
 

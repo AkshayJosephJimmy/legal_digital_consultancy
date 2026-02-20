@@ -13,11 +13,12 @@ function Home(){
         
         <>
          <HomeHero/>
-         <div className="p-20 space-y-6 bg-gray-200">
+         <div className=" space-y-6 bg-neutral-300">
+          <div className="p-20">
 
-         <h1 className="text-black text-6xl text-center font-extrabold mb-30">About us</h1>
-         <div className="text-black text-xl space-y-10  ">
-            <p>
+         <h1 className="text-black text-6xl text-center font-extrabold mb-30 ">About Us</h1>
+         <div className="text-black text-2xl space-y-10  ">
+            <p >
                 We support law firms and lawyers through BCI-compliant digital services that focus on education,
 visibility, and professional credibility.
 </p>
@@ -35,10 +36,17 @@ By combining legal expertise with digital strategy, we help law firms and indivi
 establish a professional presence that reflects their values and expertise in a responsible and credible
 manner.
             </p>
+          </div>
+           
             
          </div>
+         <div className="p-15 w-full bg-neutral-800 text-center mt-15">
+            <p className="text-gray-300 text-2xl font-semibold">Check out our services to see how we can help your firm build a strong, ethical digital presence.</p>
+         </div>
+
        <ChooseUs/>
          </div>
+        
         </>
     )
 }

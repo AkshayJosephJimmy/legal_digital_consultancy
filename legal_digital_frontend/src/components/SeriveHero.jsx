@@ -6,7 +6,7 @@ function SeriveHero() {
   const image = "/serviceHero.jpg";
      return(
             <>
-                <div className=" relative">
+                <div className=" relative mt-20">
     
                 <img src={image} alt="Services Image" className="w-full h-100 object-cover"/>
     

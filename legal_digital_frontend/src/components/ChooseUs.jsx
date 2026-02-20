@@ -32,7 +32,7 @@ function ChooseUs() {
 
     
   return (
-    <div className="choose-us-container">
+    <div className="choose-us-container px-20 py-7">
       <h2 className="text-black text-6xl text-center font-extrabold my-30">Why Choose Us</h2>
       <div className="flex gap-20 flex-wrap flex-col items-center lg:flex-row ">
         {features.map((feature,index)=>(

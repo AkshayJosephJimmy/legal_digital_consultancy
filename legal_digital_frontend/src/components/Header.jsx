@@ -12,14 +12,14 @@ const width=useScreenWidth();
 
 
     return(
-        <div className="w-full h-25 bg-gray-200 flex items-center justify-between px-4">
+        <div className="w-full fixed z-50 top-0 h-25 bg-neutral-300 flex items-center justify-between px-4 shadow-lg">
             <h1 className=" text-2xl font-bold">Company Name</h1>
             {width<500?<RxHamburgerMenu className="text-2xl" />:<nav>
                 <ul className="flex space-x-4">
-                    <Link to="/" className="hover:text-yellow-500 cursor-pointer">Home</Link>
-                    <Link to="/about" className="hover:text-blue-500 cursor-pointer">About</Link>
-                    <Link to="/services" className="hover:text-blue-500 cursor-pointer">Services</Link>
-                    <li className="hover:text-blue-500 cursor-pointer">Our Team</li>
+                    <Link to="/" className=" text-lg font-semibold hover:bg-neutral-800 hover:text-gray-300 p-1 rounded-lg cursor-pointer transition-all duration-300">Home</Link>
+                    <Link to="/services" className="text-lg font-semibold hover:bg-neutral-800 hover:text-gray-300 p-1 rounded-lg cursor-pointer transition-all duration-300">Services</Link>
+                    <Link to="/team" className="text-lg font-semibold hover:bg-neutral-800 hover:text-gray-300 p-1 rounded-lg cursor-pointer transition-all duration-300">Our Team</Link>
+                    <Link to="/about" className="text-lg font-semibold hover:bg-neutral-800 hover:text-gray-300 p-1 rounded-lg cursor-pointer transition-all duration-300">Contact Us</Link>
                     
                 </ul>
 
