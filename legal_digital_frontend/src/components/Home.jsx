@@ -19,15 +19,15 @@ function Home(){
          <h1 className="text-black text-6xl text-center font-extrabold mb-30 ">About Us</h1>
          <div className="text-black text-xl space-y-10  ">
             <p >
-                We support law firms and lawyers through BCI-compliant digital services that focus on education,
+                We support law firms and lawyers through <span className="text-neutral-800 font-extrabold">BCI-compliant</span> digital services that focus on education,
 visibility, and professional credibility.
 </p>
 <p>
 
 Our work includes responsible content creation, social media management, website development,
 search visibility, legal design & branding, and thought-leadership initiatives—all designed to improve
-access to legal information while strictly adhering to the Advocates Act, 1961 and the Bar Council of
-India Rules.
+access to legal information while strictly adhering to the <span className="text-neutral-800 font-extrabold">Advocates Act, 1961 and the Bar Council of
+India Rules.</span>
 </p>
 <p>
 We take a compliance-first approach, prioritising ethical communication, public legal awareness, and
