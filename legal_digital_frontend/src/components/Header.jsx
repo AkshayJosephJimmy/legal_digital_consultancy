@@ -19,7 +19,7 @@ const width=useScreenWidth();
                     <Link to="/" className=" text-lg font-semibold hover:bg-neutral-800 hover:text-gray-300 p-1 rounded-lg cursor-pointer transition-all duration-300">Home</Link>
                     <Link to="/services" className="text-lg font-semibold hover:bg-neutral-800 hover:text-gray-300 p-1 rounded-lg cursor-pointer transition-all duration-300">Services</Link>
                     <Link to="/team" className="text-lg font-semibold hover:bg-neutral-800 hover:text-gray-300 p-1 rounded-lg cursor-pointer transition-all duration-300">Our Team</Link>
-                    <Link to="/about" className="text-lg font-semibold hover:bg-neutral-800 hover:text-gray-300 p-1 rounded-lg cursor-pointer transition-all duration-300">Contact Us</Link>
+                    <Link to="/contact" className="text-lg font-semibold hover:bg-neutral-800 hover:text-gray-300 p-1 rounded-lg cursor-pointer transition-all duration-300">Contact Us</Link>
                     
                 </ul>
 

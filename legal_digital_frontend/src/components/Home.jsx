@@ -17,7 +17,7 @@ function Home(){
           <div className="p-20">
 
          <h1 className="text-black text-6xl text-center font-extrabold mb-30 ">About Us</h1>
-         <div className="text-black text-2xl space-y-10  ">
+         <div className="text-black text-xl space-y-10  ">
             <p >
                 We support law firms and lawyers through BCI-compliant digital services that focus on education,
 visibility, and professional credibility.
