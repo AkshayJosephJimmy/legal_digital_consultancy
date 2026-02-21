@@ -15,10 +15,10 @@ function Home(){
         <>
          <HomeHero/>
          <div className=" space-y-6 bg-neutral-300">
-          <div className="p-20">
+          <div className="py-20 px-10 lg:p-20">
 
          <h1 className="text-black text-6xl text-center font-extrabold mb-30 ">About Us</h1>
-         <div className="text-black text-xl space-y-10  ">
+         <div className="text-black text-xl lg:space-y-10  ">
             <p >
                 We support law firms and lawyers through <span className="text-neutral-800 font-extrabold">BCI-compliant</span> digital services that focus on education,
 visibility, and professional credibility.
