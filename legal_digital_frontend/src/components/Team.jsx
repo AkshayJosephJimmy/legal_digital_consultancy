@@ -11,7 +11,7 @@ const image = "/team.svg";
         <div className="w-full h-full mt-25 bg-neutral-300">
             <div className="p-15 w-full  bg-neutral-800 text-center ">
 
-            <h1 className="text-4xl font-bold text-center text-neutral-200">Our Team</h1>
+            <h1 className="text-2xl lg:text-4xl font-bold text-center text-neutral-200">Our Team</h1>
             </div>
             <div className="flex flex-row">
 

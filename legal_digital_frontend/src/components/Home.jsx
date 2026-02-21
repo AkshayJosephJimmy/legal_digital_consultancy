@@ -1,5 +1,6 @@
 import ChooseUs from "./ChooseUs"
 import HomeHero from "./HomeHero"
+import { Link } from "react-router-dom"
 
 
 
@@ -41,7 +42,7 @@ manner.
             
          </div>
          <div className="p-15 w-full bg-neutral-800 text-center mt-15">
-            <p className="text-gray-300 text-2xl font-semibold">Check out our services to see how we can help your firm build a strong, ethical digital presence.</p>
+            <p className="text-gray-300 text-2xl font-semibold">Check out our <Link to="/services" className="font-extrabold text-3xl underline hover:text-black">Services</Link> to see how we can help your firm build a strong, ethical digital presence.</p>
          </div>
 
        <ChooseUs/>
