@@ -6,7 +6,7 @@ function HomeHero() {
   return (
     <div className="w-full h-150 mt-25 bg-black flex items-center justify-center relative">
       <img
-        src="https://res.cloudinary.com/dkzuyavta/image/upload/f_auto,q_auto,w_1000/v1771658935/HomeHero_gjhanp.jpg"
+        src="https://res.cloudinary.com/dkzuyavta/image/upload/f_auto,q_auto:good,w_1600,fl_progressive/v1771658935/HomeHero_gjhanp.jpg"
         alt="Home Hero"
         className="w-full h-full object-cover  object-right opacity-80"
       />
