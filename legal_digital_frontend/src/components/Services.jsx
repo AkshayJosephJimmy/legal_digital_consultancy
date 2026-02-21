@@ -134,7 +134,7 @@ const models=[
 )}
             <div className="w-full h-40 mt-20  bg-neutral-800">
 
-            <h2 className="text-6xl text-white font-bold text-center mt-10">Service Models</h2>
+            <h2 className="text-5xl lg:text-6xl text-white font-bold text-center mt-10">Service Models</h2>
 
             </div>
 
