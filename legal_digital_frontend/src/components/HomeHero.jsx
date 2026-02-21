@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 
 function HomeHero() {
-  const homeHeroImage = "/HomeHero.jpg";
+  const homeHeroImage = "/HomeHero.webp";
   return (
     <div className="w-full h-150 mt-25 bg-black flex items-center justify-center relative">
       <img
