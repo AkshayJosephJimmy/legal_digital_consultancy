@@ -26,7 +26,7 @@ const image = "/team.svg";
                 </div>
          </div>
 
-            <figure className="lg:px-10 w-100 lg:w-200 top-70 object-cover mt-20">
+            <figure className="lg:px-10 w-95 lg:w-200 top-70 object-cover mt-20">
                 <img src={image} alt="Our Team" className="object-cover "/>
             </figure>
             </div>
