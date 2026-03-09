@@ -1,4 +1,4 @@
-import React from 'react';
+
 import ChooseCards from './ChooseCards';
 
 
@@ -20,7 +20,7 @@ function ChooseUs() {
     {
         title:"Tailored Solutions",
         description:" Services customised to your firm’s objectives and practice areas"
-    },
+    },  
     {
         title:"Credibility-Driven Growth",
         description:" Focus on trust, visibility, and long-term positioning in the legal market"
