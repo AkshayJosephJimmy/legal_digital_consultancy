@@ -10,6 +10,9 @@ import ContactUs from "./components/ContactUs.jsx"
 import Disclaimer from "./components/legal_pages/Disclaimer.jsx"
 import PrivacyPolicy from "./components/legal_pages/PrivacyPolicy.jsx"
 import TermsOfService from "./components/legal_pages/TermsOfService.jsx"
+import ScrollUp from "./components/ScrollUp.jsx"
+
+
 
 
 
@@ -21,8 +24,10 @@ function App(){
 
   return( 
     <BrowserRouter>
+    <ScrollUp/>
       <Header/>
      <Routes>
+      
       <Route path="/" element={<Home/>}/>
       <Route path="/services" element={<Services/>}/>
       <Route path='/team' element={<Team/>}/>

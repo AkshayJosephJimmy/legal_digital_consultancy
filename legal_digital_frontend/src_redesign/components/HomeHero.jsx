@@ -4,6 +4,7 @@ function HomeHero() {
   return (
     <div style={{
       width: "100%",
+      
       minHeight: "100vh",
       marginTop: 0,
       paddingTop: "72px",
@@ -55,10 +56,36 @@ function HomeHero() {
         padding: "4rem 2rem 4rem 10%",
         width: "100%",
       }}>
-        <div className="fade-up">
-          <span className="section-label" style={{ display: "block", marginBottom: "1.5rem" }}>
-            Legal Digital Consultancy
-          </span>
+        <div className="fade-up" style={{ marginBottom: "2.5rem" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1rem" }}>
+            <img
+              src="/logo.png"
+              alt="Docketo"
+              style={{
+                height: "44px",
+                width: "auto",
+                filter: "brightness(0) invert(1)",
+                opacity: 0.95,
+              }}
+            />
+            <div style={{
+              width: "1px",
+              height: "36px",
+              background: "linear-gradient(to bottom, transparent, #c9a84c, transparent)",
+              opacity: 0.6,
+            }} />
+            <span style={{
+              fontFamily: "'DM Sans', sans-serif",
+              fontSize: "0.62rem",
+              letterSpacing: "0.26em",
+              textTransform: "uppercase",
+              color: "#c9a84c",
+              fontWeight: 500,
+              lineHeight: 1.6,
+            }}>
+              Legal Digital<br />Consultancy
+            </span>
+          </div>
         </div>
 
         <h1 className="fade-up-delay-1" style={{
@@ -71,6 +98,7 @@ function HomeHero() {
           letterSpacing: "-0.01em",
           marginBottom: "2rem",
           fontStyle: "normal",
+          zIndex: 10,
         }}>
           Empowering Lawyers and Law Firms to Build a Strong, Credible, and{" "}
           <em style={{ color: "#c9a84c", fontStyle: "italic" }}>Ethical</em> Digital Presence
