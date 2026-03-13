@@ -1,3 +1,6 @@
+
+import { Link } from "react-router-dom";
+
 function Footer() {
   return (
     <footer style={{
@@ -103,9 +106,9 @@ function Footer() {
             Legal
           </h3>
           <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "0.75rem" }}>
-            {["Privacy Policy", "Terms of Service", "Disclaimer"].map(link => (
+            {[{ label: "Privacy Policy", href: "privacy" }, { label: "Terms of Service", href: "terms" }, { label: "Disclaimer", href: "disclaimer" }].map((link) => (
               <li key={link}>
-                <a href="#" style={{
+                <Link to={link.href} style={{
                   fontFamily: "'DM Sans', sans-serif",
                   fontSize: "0.85rem",
                   fontWeight: 300,
@@ -116,8 +119,8 @@ function Footer() {
                 onMouseEnter={e => e.target.style.color = "#f5f0e8"}
                 onMouseLeave={e => e.target.style.color = "#8a9aaa"}
                 >
-                  {link}
-                </a>
+                  {link.label}
+                </Link>
               </li>
             ))}
           </ul>
