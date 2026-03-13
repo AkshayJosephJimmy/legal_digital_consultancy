@@ -19,16 +19,11 @@ function Footer() {
         {/* Brand */}
         <div style={{ gridColumn: "span 1" }}>
           <div style={{ marginBottom: "1.25rem" }}>
-            <h2 style={{
-              fontFamily: "'Cormorant Garamond', serif",
-              fontSize: "1.3rem",
-              fontWeight: 600,
-              color: "#f5f0e8",
-              letterSpacing: "0.04em",
-              marginBottom: "4px",
-            }}>
-              YourBrand
-            </h2>
+            <img
+              src="/logo.png"
+              alt="Docketo"
+              style={{ height: "44px", width: "auto", filter: "brightness(0) invert(1)", marginBottom: "8px", display: "block" }}
+            />
             <span style={{
               fontSize: "0.58rem",
               letterSpacing: "0.2em",
@@ -177,7 +172,7 @@ function Footer() {
           fontWeight: 300,
           color: "#4a5a6a",
         }}>
-          © {new Date().getFullYear()} YourBrand. All Rights Reserved.
+          © {new Date().getFullYear()} Docketo. All Rights Reserved.
         </p>
         <div style={{
           width: "40px",

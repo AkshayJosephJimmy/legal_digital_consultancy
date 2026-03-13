@@ -53,22 +53,12 @@ function Header() {
           {/* Logo */}
           <Link to="/" style={{ textDecoration: "none" }}>
             <div style={{ display: "flex", flexDirection: "column", lineHeight: 1 }}>
-              <span style={{
-                fontFamily: "'Cormorant Garamond', serif",
-                fontSize: "1.4rem",
-                fontWeight: 600,
-                color: "#f5f0e8",
-                letterSpacing: "0.04em",
-              }}>Company Name</span>
-              <span style={{
-                fontSize: "0.6rem",
-                letterSpacing: "0.22em",
-                textTransform: "uppercase",
-                color: "#c9a84c",
-                marginTop: "2px",
-                fontFamily: "'DM Sans', sans-serif",
-                fontWeight: 500,
-              }}>Legal Digital Consultancy</span>
+              <img
+                src="/logo.png"
+                alt="Docketo"
+                style={{ height: "50px", width: "auto", filter: "brightness(0) invert(1)", marginBottom: "4px" }}
+              />
+             
             </div>
           </Link>
 
