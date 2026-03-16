@@ -136,7 +136,7 @@ function Footer() {
           </h3>
           <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "0.75rem" }}>
             {[
-              { label: "Email", value: "yourmail@gmail.com", href: "mailto:yourmail@gmail.com" },
+              { label: "Email", value: "hello@docketo.in", href: "mailto:hello@docketo.in" },
               { label: "Phone", value: "+91 1111111111" },
               { label: "Location", value: "Kottayam, India" },
             ].map(({ label, value, href }) => (

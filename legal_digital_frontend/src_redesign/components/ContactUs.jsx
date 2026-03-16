@@ -119,7 +119,7 @@ function ContactUs() {
               Email
             </p>
             <a
-              href="mailto:akshayjosephjimmy05@gmail.com"
+              href="mailto:hello@docketo.in"
               style={{
                 fontFamily: "'DM Sans', sans-serif",
                 fontSize: "1rem",
@@ -132,7 +132,7 @@ function ContactUs() {
               onMouseEnter={e => e.target.style.color = "#c9a84c"}
               onMouseLeave={e => e.target.style.color = "#d4cfc8"}
             >
-              companyEmail
+              hello@docketo.in
             </a>
           </div>
 
