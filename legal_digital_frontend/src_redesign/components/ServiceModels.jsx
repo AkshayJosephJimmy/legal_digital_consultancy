@@ -1,4 +1,6 @@
 function ServiceModels({ model, highlighted }) {
+  const VISIBLE_COUNT = 2;
+
   return (
     <div style={{
       background: highlighted ? "#0d1b2a" : "#fff",
@@ -24,24 +26,6 @@ function ServiceModels({ model, highlighted }) {
       }
     }}
     >
-      {highlighted && (
-        <div style={{
-          position: "absolute",
-          top: "1rem",
-          right: "1rem",
-          background: "#c9a84c",
-          color: "#0d1b2a",
-          fontSize: "0.6rem",
-          fontWeight: 700,
-          letterSpacing: "0.12em",
-          textTransform: "uppercase",
-          padding: "0.3rem 0.75rem",
-          borderRadius: "2px",
-          fontFamily: "'DM Sans', sans-serif",
-        }}>
-          Most Popular
-        </div>
-      )}
 
       {/* Gold top accent */}
       <div style={{
@@ -91,33 +75,39 @@ function ServiceModels({ model, highlighted }) {
       </p>
 
       <div style={{ display: "flex", flexDirection: "column", gap: "0.7rem" }}>
-        {model.features.map((feature, index) => (
-          <div key={index} style={{
-            display: "flex",
-            alignItems: "center",
-            gap: "0.75rem",
-            opacity: feature.disabled ? 0.35 : 1,
-          }}>
-            <span style={{
-              color: feature.disabled ? "#9aa3ad" : "#c9a84c",
-              fontSize: "0.65rem",
-              flexShrink: 0,
+        {model.features.map((feature, index) => {
+          const isBlurred = index >= VISIBLE_COUNT;
+          return (
+            <div key={index} style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "0.75rem",
+              filter: isBlurred ? "blur(3.5px)" : "none",
+              opacity: isBlurred ? 0.5 : (feature.disabled ? 0.35 : 1),
+              userSelect: isBlurred ? "none" : "auto",
+              pointerEvents: "none",
             }}>
-              {feature.disabled ? "○" : "◆"}
-            </span>
-            <span style={{
-              fontFamily: "'DM Sans', sans-serif",
-              fontSize: "0.85rem",
-              fontWeight: 300,
-              color: highlighted
-                ? (feature.disabled ? "#6b7a8a" : "#d4cfc8")
-                : (feature.disabled ? "#a0aab4" : "#3d4f60"),
-              textDecoration: feature.disabled ? "line-through" : "none",
-            }}>
-              {feature.name}
-            </span>
-          </div>
-        ))}
+              <span style={{
+                color: feature.disabled ? "#9aa3ad" : "#c9a84c",
+                fontSize: "0.65rem",
+                flexShrink: 0,
+              }}>
+                {feature.disabled ? "○" : "◆"}
+              </span>
+              <span style={{
+                fontFamily: "'DM Sans', sans-serif",
+                fontSize: "0.85rem",
+                fontWeight: 300,
+                color: highlighted
+                  ? (feature.disabled ? "#6b7a8a" : "#d4cfc8")
+                  : (feature.disabled ? "#a0aab4" : "#3d4f60"),
+                textDecoration: feature.disabled ? "line-through" : "none",
+              }}>
+                {feature.name}
+              </span>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

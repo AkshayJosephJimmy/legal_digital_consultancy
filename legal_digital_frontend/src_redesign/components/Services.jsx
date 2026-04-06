@@ -218,32 +218,152 @@ function Services() {
 
           {/* Custom Model */}
           <div style={{
-            marginTop: "3rem",
-            background: "rgba(245,240,232,0.04)",
-            border: "1px solid rgba(201,168,76,0.2)",
-            borderRadius: "4px",
-            padding: "2rem 2.5rem",
-            maxWidth: "680px",
-            margin: "3rem auto 0",
+            marginTop: "4rem",
+            position: "relative",
+            overflow: "hidden",
+            borderRadius: "6px",
+            border: "2px solid #c9a84c",
+            background: "linear-gradient(135deg, rgba(201,168,76,0.14) 0%, #0d1b2a 50%, rgba(26,46,69,0.95) 100%)",
+            boxShadow: "0 0 0 1px rgba(201,168,76,0.15), 0 30px 80px rgba(0,0,0,0.5), 0 0 60px rgba(201,168,76,0.08)",
           }}>
-            <h4 style={{
-              fontFamily: "'Cormorant Garamond', serif",
-              fontSize: "1.3rem",
-              fontWeight: 600,
-              color: "#f5f0e8",
-              marginBottom: "0.75rem",
-            }}>Custom Models</h4>
-            <p style={{
+            {/* Top gold bar — full solid */}
+            <div style={{
+              height: "4px",
+              background: "linear-gradient(90deg, #c9a84c 0%, #e8c96a 50%, #c9a84c 100%)",
+            }} />
+
+            {/* Most Popular badge */}
+            <div style={{
+              position: "absolute",
+              top: "1.4rem",
+              right: "1.5rem",
+              background: "#c9a84c",
+              color: "#0d1b2a",
+              fontSize: "0.6rem",
+              fontWeight: 700,
+              letterSpacing: "0.12em",
+              textTransform: "uppercase",
+              padding: "0.3rem 0.75rem",
+              borderRadius: "2px",
               fontFamily: "'DM Sans', sans-serif",
-              fontSize: "0.9rem",
-              fontWeight: 300,
-              lineHeight: 1.8,
-              color: "#8a9aaa",
             }}>
-              In addition to these models, services may be{" "}
-              <span style={{ color: "#c9a84c" }}>custom-selected</span> or{" "}
-              <span style={{ color: "#c9a84c" }}>tailored</span> based on specific objectives, practice areas and compliance considerations.
-            </p>
+              Most Popular
+            </div>
+
+            {/* Subtle corner glow */}
+            <div style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "220px",
+              height: "220px",
+              background: "radial-gradient(circle at top left, rgba(201,168,76,0.12) 0%, transparent 70%)",
+              pointerEvents: "none",
+            }} />
+
+            <div style={{
+              padding: "3.5rem 4rem",
+              display: "flex",
+              flexWrap: "wrap",
+              alignItems: "center",
+              gap: "3rem",
+              justifyContent: "space-between",
+            }}>
+              {/* Left: label + heading + body */}
+              <div style={{ flex: "1 1 400px" }}>
+                <span style={{
+                  display: "inline-block",
+                  fontFamily: "'DM Sans', sans-serif",
+                  fontSize: "0.65rem",
+                  fontWeight: 700,
+                  letterSpacing: "0.22em",
+                  textTransform: "uppercase",
+                  color: "#c9a84c",
+                  marginBottom: "1.1rem",
+                  background: "rgba(201,168,76,0.1)",
+                  border: "1px solid rgba(201,168,76,0.3)",
+                  padding: "0.3rem 0.9rem",
+                  borderRadius: "2px",
+                }}>
+                  Flagship Offering
+                </span>
+                <h3 style={{
+                  fontFamily: "'Cormorant Garamond', serif",
+                  fontSize: "clamp(2rem, 3.5vw, 2.8rem)",
+                  fontWeight: 500,
+                  color: "#f5f0e8",
+                  marginBottom: "1.1rem",
+                  lineHeight: 1.15,
+                }}>
+                  Bespoke Custom Model
+                </h3>
+                <p style={{
+                  fontFamily: "'DM Sans', sans-serif",
+                  fontSize: "0.95rem",
+                  fontWeight: 300,
+                  lineHeight: 1.9,
+                  color: "#c0ccd6",
+                  maxWidth: "520px",
+                }}>
+                  No two practices are alike. Our custom model is built entirely around your firm — selecting, combining, and calibrating services to match your specific objectives, practice areas, and compliance requirements.
+                </p>
+              </div>
+
+              {/* Right: feature highlights + CTA */}
+              <div style={{
+                flex: "0 1 300px",
+                display: "flex",
+                flexDirection: "column",
+                gap: "1.1rem",
+              }}>
+                {[
+                  "Hand-picked service combination",
+                  "Practice-area specific strategy",
+                  "Ongoing scope adjustments",
+                  "Dedicated compliance review",
+                ].map((point, i) => (
+                  <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: "0.85rem" }}>
+                    <span style={{ color: "#c9a84c", fontSize: "0.65rem", marginTop: "0.3rem", flexShrink: 0 }}>◆</span>
+                    <span style={{
+                      fontFamily: "'DM Sans', sans-serif",
+                      fontSize: "0.9rem",
+                      fontWeight: 300,
+                      color: "#e0dbd2",
+                      lineHeight: 1.6,
+                    }}>{point}</span>
+                  </div>
+                ))}
+
+                <a href="/contact" style={{
+                  marginTop: "1rem",
+                  display: "inline-block",
+                  padding: "0.9rem 2rem",
+                  background: "#c9a84c",
+                  color: "#0d1b2a",
+                  fontFamily: "'DM Sans', sans-serif",
+                  fontSize: "0.78rem",
+                  fontWeight: 700,
+                  letterSpacing: "0.14em",
+                  textTransform: "uppercase",
+                  textDecoration: "none",
+                  borderRadius: "3px",
+                  transition: "all 0.25s ease",
+                  alignSelf: "flex-start",
+                  boxShadow: "0 4px 20px rgba(201,168,76,0.35)",
+                }}
+                onMouseEnter={e => {
+                  e.currentTarget.style.background = "#d4b86a";
+                  e.currentTarget.style.boxShadow = "0 6px 28px rgba(201,168,76,0.5)";
+                }}
+                onMouseLeave={e => {
+                  e.currentTarget.style.background = "#c9a84c";
+                  e.currentTarget.style.boxShadow = "0 4px 20px rgba(201,168,76,0.35)";
+                }}
+                >
+                  Discuss Your Model
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
