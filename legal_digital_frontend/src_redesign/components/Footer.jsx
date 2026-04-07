@@ -137,8 +137,8 @@ function Footer() {
           <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "0.75rem" }}>
             {[
               { label: "Email", value: "hello@docketo.in", href: "mailto:hello@docketo.in" },
-              { label: "Phone", value: "+91 1111111111" },
-              { label: "Location", value: "Kottayam, India" },
+              { label: "Phone", value: "+91 6282576964" },
+              { label: "Location", value: "Kochi, India" },
             ].map(({ label, value, href }) => (
               <li key={label} style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.85rem", fontWeight: 300, color: "#8a9aaa" }}>
                 <span style={{ color: "#6b7a8a" }}>{label}: </span>

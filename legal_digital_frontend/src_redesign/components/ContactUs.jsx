@@ -150,13 +150,16 @@ function ContactUs() {
             </p>
             <div style={{ display: "flex", gap: "1.25rem" }}>
               {[
-                { Icon: FaFacebook, label: "Facebook" },
-                { Icon: FaSquareInstagram, label: "Instagram" },
-                { Icon: FaLinkedin, label: "LinkedIn" },
-              ].map(({ Icon, label }) => (
-                <button
+                { Icon: FaFacebook, label: "Facebook", href: null },
+                { Icon: FaSquareInstagram, label: "Instagram", href: "https://www.instagram.com/docketo_official?igsh=YmQ4N2V6MnZicXRo" },
+                { Icon: FaLinkedin, label: "LinkedIn", href: "https://www.linkedin.com/company/docketo" },
+              ].map(({ Icon, label, href }) => (
+                <a
                   key={label}
+                  href={href || undefined}
                   title={label}
+                  target={href ? "_blank" : undefined}
+                  rel={href ? "noopener noreferrer" : undefined}
                   style={{
                     background: "none",
                     border: "1px solid rgba(201,168,76,0.25)",
@@ -166,24 +169,27 @@ function ContactUs() {
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    cursor: "pointer",
+                    cursor: href ? "pointer" : "default",
                     color: "#8a9aaa",
                     fontSize: "1.15rem",
                     transition: "all 0.2s",
+                    textDecoration: "none",
                   }}
                   onMouseEnter={e => {
+                    if (!href) return;
                     e.currentTarget.style.borderColor = "#c9a84c";
                     e.currentTarget.style.color = "#c9a84c";
                     e.currentTarget.style.background = "rgba(201,168,76,0.08)";
                   }}
                   onMouseLeave={e => {
+                    if (!href) return;
                     e.currentTarget.style.borderColor = "rgba(201,168,76,0.25)";
                     e.currentTarget.style.color = "#8a9aaa";
                     e.currentTarget.style.background = "none";
                   }}
                 >
                   <Icon />
-                </button>
+                </a>
               ))}
             </div>
           </div>
